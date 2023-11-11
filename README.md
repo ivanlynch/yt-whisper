@@ -28,19 +28,19 @@ choco install ffmpeg
 
 The following command will generate a VTT file from the specified YouTube video
 
-    yt_whisper "https://www.youtube.com/shorts/MAWYCl3jDb8"
+    sub "https://www.youtube.com/shorts/MAWYCl3jDb8"
 
 The default setting (which selects the `small` model) works well for transcribing English. You can optionally use a bigger model for better results (especially with other languages). The available models are `tiny`, `tiny.en`, `base`, `base.en`, `small`, `small.en`, `medium`, `medium.en`, `large`.
 
-    yt_whisper "https://www.youtube.com/shorts/MAWYCl3jDb8" --model medium
+    sub "https://www.youtube.com/shorts/MAWYCl3jDb8" --model medium
 
 Adding `--task translate` will translate the subtitles into English:
 
-    yt_whisper "https://www.youtube.com/shorts/MAWYCl3jDb8" --task translate
+    sub "https://www.youtube.com/shorts/MAWYCl3jDb8" --task translate
 
 Run the following to view all available options:
 
-    yt_whisper --help
+    sub --help
 
 ## License
 
